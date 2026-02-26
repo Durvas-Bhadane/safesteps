@@ -1,0 +1,320 @@
+ROLE
+
+You are a Senior Software Engineer working at Google building scalable MERN stack SaaS platforms.
+
+Design and develop a production-level full-stack web application using the MERN stack (MongoDB, Express, React, Node.js) for a Pre-Teen Learning Portal.
+
+Generate the project in two separate folders:
+
+/frontend
+/backend
+
+This project must follow real-world scalable architecture and must be resume-worthy for FAANG-level hiring.
+
+🟪 PROJECT NAME
+
+SafeSteps – Pre-Teen Learning Portal
+
+🟪 PROBLEM CONTEXT
+
+Pre-teens hesitate to discuss emotional, social, and safety-related concerns with parents or teachers.
+They often search unsafe random information online.
+
+This platform will provide:
+
+Verified guidance
+
+Age-appropriate learning
+
+Short structured knowledge
+
+Interactive quiz-based learning
+
+🟪 SYSTEM ARCHITECTURE
+
+There are 3 Personas:
+
+Kid
+
+Counselor
+
+Admin
+
+All must login using:
+
+Email
+
+Password
+
+Implement Role-Based JWT Authentication.
+
+🟪 FRONTEND REQUIREMENT (React + Tailwind)
+
+Build a modern SaaS-style UI which is:
+
+✔ Kid-friendly
+✔ Professional
+✔ Soft pastel based
+✔ Card-driven layout
+✔ Rounded edges
+✔ Floating anti-gravity feel
+✔ Not cartoonish
+✔ Not rainbow themed
+✔ Not emoji based
+
+Replace emojis with:
+
+Real kid-safe learning illustrations
+
+Educational SVGs
+
+Rounded thumbnails
+
+🟪 KID DASHBOARD UI
+
+Include:
+
+Knowledge Categories
+
+Progress Tracker
+
+Quiz Section
+
+Earned Badge Section
+
+Recent Learning
+
+Each article must include:
+
+Do’s
+
+Don’ts
+
+Take Quiz Button
+
+Quiz Result must show:
+
+Score
+
+Feedback
+
+Star Rating
+
+🟪 COUNSELOR DASHBOARD UI
+
+Include:
+
+Create Article
+
+Add Do’s
+
+Add Don’ts
+
+Create Quiz
+
+Submit for Approval
+
+View Status
+
+🟪 ADMIN DASHBOARD UI
+
+Include:
+
+Pending Articles
+
+Approve / Reject
+
+Manage Categories
+
+Minimal & Data Focused UI.
+
+🟪 QUIZ SYSTEM
+
+Implement:
+
+MCQ Questions
+
+Progress Bar
+
+Retry Option
+
+Score Feedback
+
+Friendly Result Panel
+
+Use dummy JSON initially.
+
+🟪 DARK / LIGHT MODE
+
+Implement theme toggle using:
+
+Tailwind Config
+
+Context API
+
+Maintain readability in both modes.
+
+🟪 BACKEND REQUIREMENT (Node + Express)
+
+Implement production-level backend with:
+
+Register API
+
+Login API
+
+JWT Auth
+
+bcrypt Password Hashing
+
+Role Middleware
+
+Protected Routes
+
+🟪 MONGODB MODELS
+USER
+
+name
+
+email
+
+password
+
+role (kid / counselor / admin)
+
+ARTICLE
+
+title
+
+content
+
+dos
+
+donts
+
+category
+
+createdBy
+
+status (pending / approved / rejected)
+
+QUIZ
+
+articleId
+
+question
+
+options
+
+correctAnswer
+
+PROGRESS
+
+kidId
+
+articleId
+
+score
+
+completed
+
+🟪 BUSINESS LOGIC
+
+Counselor:
+
+Create Article
+
+Add Do’s
+
+Add Don’ts
+
+Add Quiz
+
+Submit for Approval
+
+Admin:
+
+Approve / Reject Articles
+
+Kid:
+
+View Approved Articles
+
+Take Quiz
+
+View Score
+
+Track Progress
+
+🟪 API ROUTES
+
+AUTH:
+
+POST /api/auth/register
+POST /api/auth/login
+
+COUNSELOR:
+
+POST /api/articles/create
+POST /api/quiz/create
+GET /api/articles/my
+
+ADMIN:
+
+GET /api/articles/pending
+PUT /api/articles/approve/:id
+PUT /api/articles/reject/:id
+
+KID:
+
+GET /api/articles/approved
+GET /api/quiz/:articleId
+POST /api/progress/submit
+🟪 OUTPUT REQUIRED
+
+Generate:
+
+FRONTEND
+
+Folder Structure
+
+Pages
+
+Components
+
+Routing
+
+Dummy JSON
+
+Axios Integration
+
+Dark Mode
+
+BACKEND
+
+Folder Structure
+
+Models
+
+Controllers
+
+Routes
+
+Middleware
+
+MongoDB Connection
+
+JWT Config
+
+🟪 FINAL GOAL
+
+Build a FAANG-level resume-ready MERN-based role-based learning platform with:
+
+Counselor-driven content workflow
+
+Admin approval system
+
+Gamified quiz module
+
+Dark / Light theme
+
+Human-designed UI
